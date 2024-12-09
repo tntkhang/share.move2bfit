@@ -1,0 +1,5 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { "namespace": "android_app", "package_name": "com.walk2bfit.walk2bfit",
+                 "sha256_cert_fingerprints": ["E7:A8:FE:FA:2D:94:37:89:2D:09:F9:D0:11:DF:E8:C6:32:06:3D:F0:EC:C6:B9:55:EA:F3:12:F3:DF:6B:B4:A2"] }
+  }]

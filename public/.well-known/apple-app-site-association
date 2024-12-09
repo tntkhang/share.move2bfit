@@ -1,0 +1,17 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+			"53LAHTP4VN.Walk2BFit"
+		],
+		"components": [
+				{
+					"/": "/*",
+					"comment": "Matched any url"
+				}
+			]
+            }
+        ]
+    }
+}
