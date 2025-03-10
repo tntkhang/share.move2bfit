@@ -9,11 +9,11 @@ export default function Home() {
     const isAndroid = /Android/.test(userAgent);
 
     if (isIOS) {
-      window.location.href = 'https://apps.apple.com/us/app/facebook/id284882215';
+      window.location.href = 'https://apps.apple.com/vn/app/move2bfit/id6496063347';
     } else if (isAndroid) {
-      window.location.href = 'https://play.google.com/store/apps/details?id=com.facebook.katana';
+      window.location.href = 'https://play.google.com/store/apps/details?id=com.walk2bfit.walk2bfit';
     } else {
-      window.location.href = 'https://facebook.com';
+      window.location.href = 'https://move2bfit.com';
     }
   }, []);
 
