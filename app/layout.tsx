@@ -20,9 +20,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Move2BFit",
     description: "Join Move2BFit - Your fitness journey starts here",
+    url: 'https://share-move2bfit.vercel.app',
     images: [
       {
-        url: '/logo_image.png',
+        url: 'https://share-move2bfit.vercel.app/logo_image.png',
         width: 1200,
         height: 630,
         alt: 'Move2BFit Logo',
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Move2BFit",
     description: "Join Move2BFit - Your fitness journey starts here",
-    images: ['/logo_image.png'],
+    images: ['https://share-move2bfit.vercel.app/logo_image.png'],
   },
 };
 
