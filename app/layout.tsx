@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/logo_image.png',
-        width: 2623,
-        height: 1124,
+        width: 1200,
+        height: 630,
         alt: 'Move2BFit Logo',
       }
     ],
