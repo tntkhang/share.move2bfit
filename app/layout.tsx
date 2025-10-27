@@ -15,7 +15,28 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Move2BFit",
-  description: "",
+  description: "Join Move2BFit - Your fitness journey starts here",
+  metadataBase: new URL('https://share-move2bfit.vercel.app'),
+  openGraph: {
+    title: "Move2BFit",
+    description: "Join Move2BFit - Your fitness journey starts here",
+    images: [
+      {
+        url: '/logo_image.png',
+        width: 2623,
+        height: 1124,
+        alt: 'Move2BFit Logo',
+      }
+    ],
+    siteName: 'Move2BFit',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Move2BFit",
+    description: "Join Move2BFit - Your fitness journey starts here",
+    images: ['/logo_image.png'],
+  },
 };
 
 export default function RootLayout({
