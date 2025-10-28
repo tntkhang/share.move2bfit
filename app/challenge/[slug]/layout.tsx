@@ -2,11 +2,11 @@ import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Move2BFit Challenge",
-    description: "Join this fitness challenge on Move2BFit",
+    title: "Move2BFit Challenge Invitation",
+    description: "Join this fitness challenge",
     openGraph: {
-      title: "Move2BFit Challenge",
-      description: "Join this fitness challenge on Move2BFit",
+      title: "Move2BFit Challenge Invitation",
+      description: "Join this fitness challenge",
       url: 'https://share-move2bfit.vercel.app',
       images: [
         {
@@ -21,8 +21,8 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title: "Move2BFit Challenge",
-      description: "Join this fitness challenge on Move2BFit",
+      title: "Move2BFit Challenge Invitation",
+      description: "Join this fitness challenge",
       images: ['https://share-move2bfit.vercel.app/logo_image.png'],
     },
   };
