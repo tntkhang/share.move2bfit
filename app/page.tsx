@@ -1,28 +1,38 @@
-
 "use client";
-import { useEffect } from 'react';
+
+import { useEffect, useState } from "react";
+import DesktopLandingPage from "./components/DesktopLandingPage";
 
 export default function Home() {
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [deepLink, setDeepLink] = useState("");
+
   useEffect(() => {
     const userAgent = navigator.userAgent;
     const isIOS = /iPad|iPhone|iPod/.test(userAgent);
     const isAndroid = /Android/.test(userAgent);
 
     if (isIOS) {
-      window.location.href = 'https://apps.apple.com/us/app/facebook/id284882215';
+      window.location.href =
+        "https://apps.apple.com/vn/app/move2bfit/id6496063347";
     } else if (isAndroid) {
-      window.location.href = 'https://play.google.com/store/apps/details?id=com.facebook.katana';
+      window.location.href =
+        "https://play.google.com/store/apps/details?id=com.walk2bfit.walk2bfit";
     } else {
-      window.location.href = 'https://facebook.com';
+      setDeepLink(window.location.href);
+      setIsDesktop(true);
     }
   }, []);
 
+  if (!isDesktop) {
+    return (
+      <div>
+        <main>
+          <h1>Move2BFit</h1>
+        </main>
+      </div>
+    );
+  }
 
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-       <h1>Move2BFit</h1>
-      </main>
-    </div>
-  );
+  return <DesktopLandingPage type="default" deepLink={deepLink} />;
 }
